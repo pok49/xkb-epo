@@ -17,7 +17,7 @@ convenient in an intelligent editor like Emacs.) At the global OS level
 the direct methods are unpractical, and they are removed from this `epo`.
 
 The “Diacriticals at Level3” method was already there in the Ubuntu’s
-`epo` file; this project’s `epo` adds more useful characters, required
+`epo` file; this project’s `epo` adds some useful characters, required
 by the Esperantic tradition: curly apostrophes, paired quotation
 marks, en- and em-dashes, non-breakable spaces and hyphens etc. These
 additions are done for the QWERTY layout only; the Dvorak and Colemak
@@ -49,7 +49,7 @@ layouts remain unchanged.
 ~~~
 
 It should be noted that
-* `AltGr`+`\`` (`AltGr`+*grave*) produces *letter apostrophe* (U+20BC);
+* `AltGr`+\` (`AltGr`+*grave*) produces *letter apostrophe* (U+20BC);
 * `AltGr`+`,` (`AltGr`+*comma*) produces “single low-9 quotation mark” (U+201A, ‹‚›);
 * `AltGr`+`-` produces “figure dash”; 
 * `AltGr`+`n` produces en-dash; 
