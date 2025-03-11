@@ -14,16 +14,16 @@
 // │ 1 3 │   1 = Normal, 3 = Level3
 // └─────┘
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
-// │ ~   │ ! ′ │ @ ə │ # № │ $ £ │ %   │ ^ ↑ │ & ‡ │ * ∞ │ (   │ )   │ _ ‑ │ + × ┃ ⌫ Back  ┃
-// │ ` ‘ │ 1 ¹ │ 2 ² │ 3 ³ │ 4 § │ 5 ÷ │ 6 ↓ │ 7 † │ 8 • │ 9   │ 0 ° │ - ‒ │ = ≈ ┃  space  ┃
+// │ ~ ˞ │ ! ′ │ @ ə │ # ɜ │ $   │ % ˌ │ ^ ↑ │ & † │ * • │ ( \ │ ) ° │ _ ‑ │ + ~ ┃ ⌫ Back  ┃
+// │ ` ‘ │ 1 ¹ │ 2 ² │ 3 ³ │ 4 § │ 5 ˈ │ 6 ↓ │ 7 { │ 8 } │ 9 [ │ 0 ] │ - ‒ │ = ≈ ┃  space  ┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
-// ┃       ┃ Q   │ W   │ E ɛ │ R   │ T   │ Y   │ U   │ I   │ O   │ P   │ {   │ }   ┃ Enter ┃
-// ┃Tab ↹  ┃ q   │ w   │ e € │ r   │ t   │ y   │ u   │ i   │ o   │ p   │ [ 〈 │ ] 〉 ┃   ⏎   ┃
+// ┃       ┃ Q   │ W   │ E ɛ │ R   │ T   │ Y   │ U Ŭ │ I   │ O   │ P   │ {   │ }   ┃ Enter ┃
+// ┃Tab ↹  ┃ q   │ w   │ e   │ r   │ t   │ y   │ u ŭ │ i   │ o   │ p   │ [ 〈 │ ] 〉 ┃   ⏎   ┃
 // ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
-// ┃        ┃ A ɑ │ S Ŝ │ D   │ F   │ G Ĝ │ H Ĥ │ J Ĵ │ K   │ L   │ : “ │ " ” │ |   ┃      ┃
+// ┃        ┃ A ɑ │ S Ŝ │ D   │ F   │ G Ĝ │ H Ĥ │ J Ĵ │ K   │ L   │ : “ │ " ” │ | | ┃      ┃
 // ┃Caps ⇬  ┃ a ª │ s ŝ │ d   │ f   │ g ĝ │ h ĥ │ j ĵ │ k   │ l   │ ; „ │ ' ’ │ \ ¦ ┃      ┃
 // ┣━━━━━━━━┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━━┫
-// ┃             │ Z   │ X   │ C Ĉ │ V ʌ │ B ″ │ N ⁿ │ M μ │ <   │ > · │ ?   ┃             ┃
+// ┃             │ Z ʒ │ X   │ C Ĉ │ V ʌ │ B ″ │ N ⁿ │ M μ │ <   │ > · │ ? ʔ ┃             ┃
 // ┃Shift ⇧      │ z « │ x » │ c ĉ │ v ‹ │ b › │ n – │ m — │ , ‚ │ . … │ / ʼ ┃Shift ⇧      ┃
 // ┣━━━━━━━┳━━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴───┲━┷━━━━━╈━━━━━┻━┳━━━━━━━┳━━━┛
 // ┃       ┃ ◆   ⌘ ┃       ┃ ␣ sp                      nnbsp ⍽ ┃       ┃       ┃       ┃
@@ -45,8 +45,8 @@ xkb_symbols "qwerty" {
    key <AD07> {[ NoSymbol, NoSymbol,      ubreve,      Ubreve ]};
 
   key <AC01> {[ NoSymbol, NoSymbol, ordfeminine, U0251 ]}; // A ª ɑ
-  key <AD03> {[ NoSymbol, NoSymbol, EuroSign, U025B ]};    // E € ɛ
-  key <AB01> {[ NoSymbol, NoSymbol, guillemotleft,  NoSymbol]}; // Z «
+  key <AD03> {[ NoSymbol, NoSymbol, NoSymbol, U025B ]};    // E ɛ
+  key <AB01> {[ NoSymbol, NoSymbol, guillemotleft,  U0292 ]};	// Z « ʒ
   key <AB02> {[ NoSymbol, NoSymbol, guillemotright, NoSymbol]}; // X »
   key <AB04> {[ NoSymbol, NoSymbol, U2039,  U028C ]}; // V ‹ ʌ
   key <AB05> {[ NoSymbol, NoSymbol, U203A,  U2033 ]}; // B › bis″
@@ -54,13 +54,13 @@ xkb_symbols "qwerty" {
   key <AB07> {[ NoSymbol, NoSymbol, emdash, mu ]};    // M — µ
 
   key.type[Group1] = "FOUR_LEVEL";
-  key <BKSL> {[ NoSymbol, NoSymbol, brokenbar, NoSymbol ]};
+  key <BKSL> {[ NoSymbol, NoSymbol, brokenbar, bar ]};		  // \ | ¦ |
   key <SPCE> {[ NoSymbol, NoSymbol, nobreakspace, U202F ]};	  // ␣ NarrowNBSP
-  key <TLDE>  {[NoSymbol, NoSymbol,U02BC, leftsinglequotemark ]}; // ` ~ ‘
+  key <TLDE> {[NoSymbol, NoSymbol, leftsinglequotemark, U02DE ]}; // ` ~ ‘ ˞
 
   key <AB08> {[NoSymbol, NoSymbol, U201A,    NoSymbol ]};	// (comma less) “single low-9”‹‚›
   key <AB09> {[NoSymbol, NoSymbol, ellipsis, periodcentered ]}; // . > … ·
-  key <AB10> {[NoSymbol, NoSymbol, U02BC, NoSymbol]};		// ‘/’ ? letterʼ
+  key <AB10> {[NoSymbol, NoSymbol, U02BC, U0294 ]};		// ‘/’ ? letterʼ ʔ
   key <AC10> {[NoSymbol, NoSymbol, doublelowquotemark, leftdoublequotemark ]};     //  semicolon,
   key <AC11> {[NoSymbol, NoSymbol, rightsinglequotemark, rightdoublequotemark]};   //  apostrophe " rq ”
 
@@ -68,17 +68,23 @@ xkb_symbols "qwerty" {
   key <AD12> {[ NoSymbol, NoSymbol, U232A, NoSymbol ]}; // ] } angle bracket〉
 
   key <AE01> {[ NoSymbol, NoSymbol, U00B9, U2032 ]}; // 1 ¹ prime
-  key <AE02> {[ NoSymbol, NoSymbol, U00B2,  U0259]}; // 2 ² ə
-  key <AE03> {[ NoSymbol, NoSymbol, U00B3, U2116 ]}; // 3 ³ №
-  key <AE04> {[ NoSymbol, NoSymbol, U00A7, U00A3 ]}; // 4 § £
-  key <AE05> {[ NoSymbol, NoSymbol, division,   NoSymbol ]};     // 5 % ÷
-  key <AE06> {[ NoSymbol, NoSymbol, downarrow,  uparrow ]};      // 6 ^ ↓ ↑
-  key <AE07> {[ NoSymbol, NoSymbol, dagger,     doubledagger ]}; // 7 & † ‡
-  key <AE08> {[ NoSymbol, NoSymbol, U2022,      infinity ]};     // 8 * • ∞
+  key <AE02> {[ NoSymbol, NoSymbol, U00B2, U0259 ]}; // 2 ² ə
+  key <AE03> {[ NoSymbol, NoSymbol, U00B3, U025C ]}; // 3 ³ ɜ
+  key <AE04> {[ NoSymbol, NoSymbol, U00A7, NoSymbol ]}; // 4 §
+  key <AE05> {[ NoSymbol, NoSymbol, U02C8, U02CC ]}; // 5 % ˈ ˌ
+  key <AE06> {[ NoSymbol, NoSymbol, downarrow,  uparrow ]};	// 6 ^ ↓ ↑
+//  key <AE07> {[ NoSymbol, NoSymbol, braceleft,  dagger ]};	// 7 & { †
+//  key <AE08> {[ NoSymbol, NoSymbol, braceright, U2022 ]};	// 8 * } •
+//  key <AE09> {[	NoSymbol, NoSymbol, bracketleft, backslash ]};	// 9 ( [ backslash
+//  key <AE10> {[	NoSymbol, NoSymbol, bracketright, degree ]};	// 0 ) °
 
-  key <AE10> {[	NoSymbol, NoSymbol, degree, NoSymbol ]};// 0 °
+  key <AE07> {[ NoSymbol, NoSymbol, NoSymbol,  dagger ]};	// 7 & { †
+  key <AE08> {[ NoSymbol, NoSymbol, NoSymbol, U2022 ]};		// 8 * } •
+  key <AE09> {[	NoSymbol, NoSymbol, NoSymbol, backslash ]};	// 9 ( [ backslash
+  key <AE10> {[	NoSymbol, NoSymbol, NoSymbol, degree ]};	// 0 ) °
+
   key <AE11> {[ NoSymbol, NoSymbol, U2012, U2011 ]}; // - _ Fig- nonBreak-   (minus)
-  key <AE12> {[ NoSymbol, NoSymbol, U2248, multiply ]}; // = + ≈ ×
+  key <AE12> {[ NoSymbol, NoSymbol, U2248, asciitilde ]}; // = + ≈ ~
 
 };
 

@@ -40,16 +40,16 @@ remain unchanged.
 │ 1 3 │   1 = Normal, 3 = AltGr
 └─────┘
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
-│ ~   │ ! ′ │ @ ə │ # № │ $ £ │ %   │ ^ ↑ │ & ‡ │ * ∞ │ (   │ )   │ _ ‑ │ + × ┃ ⌫ Back  ┃
-│ ` ‘ │ 1 ¹ │ 2 ² │ 3 ³ │ 4 § │ 5 ÷ │ 6 ↓ │ 7 † │ 8 • │ 9   │ 0 ° │ - ‒ │ = ≈ ┃  space  ┃
+│ ~ ˞ │ ! ′ │ @ ə │ # ɜ │ $ £ │ % ˌ │ ^ ↑ │ & † │ * • │ (   │ ) ° │ _ ‑ │ + ~ ┃ ⌫ Back  ┃
+│ ` ‘ │ 1 ¹ │ 2 ² │ 3 ³ │ 4 § │ 5 ˈ │ 6 ↓ │ 7 { │ 8 } │ 9 [ │ 0 ] │ - ‒ │ = ≈ ┃  space  ┃
 ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
-┃       ┃ Q   │ W   │ E ɛ │ R   │ T   │ Y   │ U   │ I   │ O   │ P   │ {   │ }   ┃ Enter ┃
-┃Tab ↹  ┃ q   │ w   │ e € │ r   │ t   │ y   │ u   │ i   │ o   │ p   │ [ 〈 │ ] 〉 ┃   ⏎   ┃
+┃       ┃ Q   │ W   │ E ɛ │ R   │ T   │ Y   │ U Ŭ │ I   │ O   │ P   │ {   │ }   ┃ Enter ┃
+┃Tab ↹  ┃ q   │ w   │ e € │ r   │ t   │ y   │ u ŭ │ i   │ o   │ p   │ [ 〈 │ ] 〉 ┃   ⏎   ┃
 ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
-┃        ┃ A ɑ │ S Ŝ │ D   │ F   │ G Ĝ │ H Ĥ │ J Ĵ │ K   │ L   │ : “ │ " ” │ |   ┃      ┃
+┃        ┃ A ɑ │ S Ŝ │ D   │ F   │ G Ĝ │ H Ĥ │ J Ĵ │ K   │ L   │ : “ │ " ” │ | | ┃      ┃
 ┃Caps ⇬  ┃ a ª │ s ŝ │ d   │ f   │ g ĝ │ h ĥ │ j ĵ │ k   │ l   │ ; „ │ ' ’ │ \ ¦ ┃      ┃
 ┣━━━━━━━━┻━━━━┱┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━━┫
-┃             ┃ Z   │ X   │ C Ĉ │ V ʌ │ B ″ │ N ⁿ │ M μ │ < „ │ > · │ ?   ┃             ┃
+┃             ┃ Z ʒ │ X   │ C Ĉ │ V ʌ │ B ″ │ N ⁿ │ M μ │ < „ │ > · │ ? ʔ ┃             ┃
 ┃Shift ⇧      ┃ z « │ x » │ c ĉ │ v ‹ │ b › │ n – │ m — │ , ‚ │ . … │ / ʼ ┃Shift ⇧      ┃
 ┣━━━━━━━┳━━━━━┻━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴───┲━┷━━━━━╈━━━━━┻━┳━━━━━━━┳━━━┛
 ┃       ┃  ◆  ⌘ ┃       ┃ ␣ sp                      nnbsp ⍽ ┃       ┃       ┃       ┃
@@ -60,15 +60,17 @@ remain unchanged.
 Disambiguation of similar glyphs:
 * `AltGr`+`-` produces “figure dash”, as in ‒2;
 * `AltGr`+`n` produces en-dash, as in 0–9;
-* `AltGr`+`m` produces em-dash;
+* `AltGr`+`m` produces em—dash;
+* `AltGr`+`5` is “primary ˈstress”
 * `AltGr`+`Shift`+`1` produces prime′, as in 45°20′17″;
 * `AltGr`+`B` (i.e. `AltGr`+`Shift`+`b`) produces bis″ (= double-prime″);
 * `AltGr`+`:` and `AltGr`+`"` produce “US quotation marks”;
 * `AltGr`+`,` (`AltGr`+*comma*) produces “single low-9 quotation mark” (U+201A = ‹‚›);
+* `AltGr`+`%` is “ˌsecondary stress” (cf [SAMPA](https://en.wikipedia.org/wiki/SAMPA_chart)) or Zamenhof’s *signeto* (as in ‹malˌsanˌulˌo›) 
 * `AltGr`+`Shift`+`.` produces *middle dot*, as in ‹mal·san·ul·o›;
 * `AltGr`+`/` produces *letter apostrophe* (U+20BC), as in «Ho, mia korʼ»;
 * `AltGr`+`[` and `AltGr`+`]` produce *angle brackets* (as in ‘〈a, b〉’);
-* `AltGr`+`v` and `AltGr`+`b` produce *half-guillemets* (as in *la artikolo ‹lʼ›*).
+* `AltGr`+`v` and `AltGr`+`b` produce *half-guillemots* (as in *la artikolo ‹lʼ›*).
 * `nbsp` = “Non-Breaking Space” (U+00A0), `nnbsp` = “Narrow NBSP” (U+202F)
 
 ## Compose key (⎄) can be handy ##
@@ -76,28 +78,54 @@ Disambiguation of similar glyphs:
 This modification includes no dead key or accented letter (apart from
 those of Esperanto), because there are too many of them and they can
 be easily combined with the help of the regular
-[Compose key](https://en.wikipedia.org/wiki/Compose_key). But some
+[Compose key](https://en.wikipedia.org/wiki/Compose_key) ⎄. But some
 typographic characters, important for Esperanto (e.g. the lower
 99-quotation mark ‹„›) are duplicated in `epo` because their
-Compose-combinations are longer and/or unintuitive.
+Compose-combinations are much longer and/or unintuitive.
 
+Thus there is no key for any of the following characters:
+
+* Currency Symbols:
+  + ₿ : ‘⎄ `B |`’
+  + ¢ : ‘⎄ `c |`’
+  + € : ‘⎄ `E =`’   or   ‘⎄ `e =`’   or   ‘⎄ `C =`’   or   ‘⎄ `= C`’ …
+  + £ : ‘⎄ `- L`’ 
+  + ¥ : ‘⎄ `Y =`’   or   ‘⎄ `= y`’ …
+* Ligatures and Diacritics:
+  + æ : ‘⎄ `a e`’
+  + ß : ‘⎄ `s s`’
+  + è : ‘⎄`` ` e``’;   ë : ‘⎄ `" e`’;  ę : ‘⎄ `; e`’;   ç : ‘⎄ `, c`’ …
+  + î : ‘⎄ `^ i`’ (but **ĉĝĥĵŝ** are *also* available as special Level-3 keys in this layout)
+  * ø : ‘⎄`` / o``’   or   ‘⎄`` o /``’;   Ł : ‘⎄ `/ L`’ …
+  * ž : ‘⎄`` z <``’   or   ‘⎄ `v z`’ …
+  
 ## Caveat ##
 
 This extension should work as expected with any QWERTY as long as the
 Level‑3/4 definitions of the layouts in question do not collide. I use it
 with the `basic` variant of the `us` layout. But if you use the
 “French (Canada)” layout, some collisions would emerge. Actually
-“French (Canada)” by itself provides most of these additions[^1] (yet
-it does not provide the *letter apostrophe* and the lower 99-quotation
-mark ‹„›); in that case all you need is to use the original `epo` from
-the distribution, which adds diacritics to the base letters CGHJSU
-only, and “French (Canada)” defines nothing for their keys at the
-Level‑3/4.
+“French (Canada)” by itself provides some of my additions, and quite a
+few of them occupy the same keys — e.g. the quotation marks
+Z/‘«’, X/‘»’ etc.[^1]
+
+~~~
+┱─────┬─────┬─  ─┬─────┬─────┬─────┬─────┬─────┲┷━━━━━┻━━━━━━┫
+┃ Z   │ X   │    │ N   │ M μ │ < „ │ > · │ ? ʔ ┃             ┃
+┃ z « │ x » │    │ n – │ m — │ , ‚ │ . … │ / ʼ ┃Shift ⇧      ┃
+──────┴─────┴─  ─┴─────┴─────┴───┲━┷━━━━━╈━━━━━┻━┳━━━━━━━┳━━━┛
+~~~
+
+(yet  it  does not  provide  the  *letter  apostrophe* and  the  lower
+99-quotation  mark ‹„›);  in that  case  all you  need is  to use  the
+original `epo`  from the  distribution, which  adds diacritics  to the
+base letters  CGHJSU only, and  “French (Canada)” defines  nothing for
+their keys at the Level‑3/4.
 
 (Yet the distro’s `epo` too can collide with another QWERTY layout, if
 the latter does use any of the CGHJSU keys at the levels 3 or 4.)
 
-[^1]: And the new `epo` additions in some cases follow the Canadian
+[^1]: The new `epo` additions in some cases follow the Canadian
 arrangement, e.g. in location of the quotation marks: Z/‘«’, X/‘»’ etc.
 
 # Installation #
