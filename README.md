@@ -1,20 +1,24 @@
 # A Keyboard Level-3/4 Layout Add-on for Esperanto #
 
-This is a modification of the `/usr/share/X11/xkb/symbols/epo` file.
-That file contains several layouts for inputting text in Esperanto.
-Only one input method is retained in the modification: the supersigned
-letters of Esperanto are located at the Level-3/4 under their respective
-base letters of a Latin keyboard (say, “US-basic”), so that
+This is a modification of the `/usr/share/X11/xkb/symbols/epo` file. The
+`xkb-epo` repository contains the replacement file under the name `epo3`;
+the simplest way to install the modification is to replace the system
+file with a copy of `epo3` (under the system’s name `epo`). The original
+`epo` contains several layouts for inputting text in Esperanto. Only one
+input method is retained in `epo3`: the supersigned letters of Esperanto
+are located at the Level-3/4 under their respective base letters of a
+Latin keyboard (say, “US-basic”), so that
 
- * `ĉ` = `AltGr`+`ĉ`
+ * `ĉ` = `AltGr`+`c`
  * `Ĉ` = `AltGr`+`C` (i.e. `AltGr`+`Shift`+`c`)
 
-The alternative *direct methods* (`ĉ` replaces `x` at Level‑1, `x` is
-typed as `AltGr`+`x`) breaks the software developed for the standard
-US layout: `Ctrl`+`x` becomes `Ctrl-ĉ` etc, and the *Common User Access*
-System (CUA) becomes unusable. (Direct method is available and quite
-convenient in an intelligent editor like Emacs.) At the global OS level
-the direct methods are impractical, and they are removed from this `epo`.
+The alternative *direct methods* (`ĉ` replaces `x` at Level‑1, `x` is typed as
+`AltGr`+`x`) breaks the software developed for the standard US layout:
+`Ctrl`+`x` becomes `Ctrl-ĉ` etc, and the *Common User Access* System (CUA)
+becomes unusable. (Direct method is available and quite convenient in
+an intelligent editor like Emacs, see `e8 input-method` at [eomacs](https://github.com/pok49/eomacs).) At
+the global OS level the direct methods are impractical, and they are
+removed from `epo3`.
 
 The converse method which puts the supersigned Esperanto letters at
 the Level‑3/4 was already there in the Ubuntu’s `epo` file; it is less
@@ -26,11 +30,11 @@ direct method, which puts all the esperantic letters al the Level-1/2, I
 implement and use in Emacs, which is intelligent enough to spare me
 most of the layout switching.
 
-OTOH the project’s `epo` adds some useful characters, required by the
-Esperantic tradition: curly apostrophes, paired quotation marks, en-
-and em-dashes, non-breakable spaces and hyphens etc. These additions
-are done for the QWERTY layout only; the Dvorak and Colemak layouts
-remain unchanged.
+OTOH `epo3` adds some useful characters, required by the Esperantic
+tradition: curly apostrophes, paired quotation marks, en- and
+em-dashes, non-breakable spaces and hyphens etc. These additions are
+done for the QWERTY layout only; the Dvorak and Colemak layouts remain
+unchanged.
 
 # The enriched QWERTY layout #
 
@@ -40,21 +44,27 @@ remain unchanged.
 │ 1 3 │   1 = Normal, 3 = AltGr
 └─────┘
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
-│ ~ ˞ │ ! ′ │ @ ə │ # ɜ │ $ £ │ % ˌ │ ^ ↑ │ & † │ * • │ (   │ ) ° │ _ ‑ │ + ~ ┃ ⌫ Back  ┃
+│ ~ ˞ │ ! ′ │ @ ə │ # ɜ │ $ £ │ % ˌ │ ^ ↑ │ & † │ * • │ (   │ ) ° │ _ ‑ │ + ~ ┃   Back  ┃
 │ ` ‘ │ 1 ¹ │ 2 ² │ 3 ³ │ 4 § │ 5 ˈ │ 6 ↓ │ 7 { │ 8 } │ 9 [ │ 0 ] │ - ‒ │ = ≈ ┃  space  ┃
 ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
 ┃       ┃ Q   │ W   │ E ɛ │ R   │ T   │ Y   │ U Ŭ │ I   │ O   │ P   │ {   │ }   ┃ Enter ┃
-┃Tab ↹  ┃ q   │ w   │ e € │ r   │ t   │ y   │ u ŭ │ i   │ o   │ p   │ [ 〈 │ ] 〉 ┃   ⏎   ┃
+┃ Tab   ┃ q   │ w   │ e € │ r   │ t   │ y   │ u ŭ │ i   │ o   │ p   │ [ ⟨ │ ] ⟩ ┃       ┃
 ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
 ┃        ┃ A ɑ │ S Ŝ │ D   │ F   │ G Ĝ │ H Ĥ │ J Ĵ │ K   │ L   │ : “ │ " ” │ | | ┃      ┃
-┃Caps ⇬  ┃ a ª │ s ŝ │ d   │ f   │ g ĝ │ h ĥ │ j ĵ │ k   │ l   │ ; „ │ ' ’ │ \ ¦ ┃      ┃
+┃ Caps   ┃ a ª │ s ŝ │ d   │ f   │ g ĝ │ h ĥ │ j ĵ │ k   │ l   │ ; „ │ ' ’ │ \ ¦ ┃      ┃
 ┣━━━━━━━━┻━━━━┱┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━━┫
 ┃             ┃ Z ʒ │ X   │ C Ĉ │ V ʌ │ B ″ │ N ⁿ │ M μ │ < „ │ > · │ ? ʔ ┃             ┃
-┃Shift ⇧      ┃ z « │ x » │ c ĉ │ v ‹ │ b › │ n – │ m — │ , ‚ │ . … │ / ʼ ┃Shift ⇧      ┃
+┃ Shift       ┃ z « │ x » │ c ĉ │ v ‹ │ b › │ n – │ m — │ , ‚ │ . … │ / ʼ ┃ Shift       ┃
 ┣━━━━━━━┳━━━━━┻━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴───┲━┷━━━━━╈━━━━━┻━┳━━━━━━━┳━━━┛
-┃       ┃  ◆  ⌘ ┃       ┃ ␣ sp                      nnbsp ⍽ ┃       ┃       ┃       ┃
-┃Ctrl ⎈ ┃Logo ⊞ ┃Alt  ⎇ ┃ ␣ sp        Space          nbsp ⍽ ┃AltGr ⇮┃Menu   ┃Ctrl ⎈ ┃
+┃       ┃       ┃       ┃ ␣ sp                      nnbsp ⍽ ┃       ┃       ┃       ┃
+┃ Ctrl  ┃ Logo  ┃ Alt   ┃ ␣ sp      S p a c e        nbsp ⍽ ┃ AltGr ┃ Menu  ┃ Ctrl  ┃
 ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
+~~~
+
+When this `epo3` file is unstalled in its place as `epo`, the above layout drawing
+can conveniently be output on your terminal with a command defined as
+~~~bash
+alias epok="sed -nE 's:// ::;/┓/,/┗/p' /usr/share/X11/xkb/symbols/epo"
 ~~~
 
 Disambiguation of similar glyphs:
@@ -80,7 +90,7 @@ those of Esperanto), because there are too many of them and they can
 be easily combined with the help of the regular
 [Compose key](https://en.wikipedia.org/wiki/Compose_key) ⎄. But some
 typographic characters, important for Esperanto (e.g. the lower
-99-quotation mark ‹„›) are duplicated in `epo` because their
+99-quotation mark ‹„›) are duplicated in `epo3` because their
 Compose-combinations are much longer and/or unintuitive.
 
 Thus there is no key for any of the following characters:
@@ -125,19 +135,19 @@ their keys at the Level‑3/4.
 (Yet the distro’s `epo` too can collide with another QWERTY layout, if
 the latter does use any of the CGHJSU keys at the levels 3 or 4.)
 
-[^1]: The new `epo` additions in some cases follow the Canadian
+[^1]: The new `epo3` additions in some cases follow the Canadian
 arrangement, e.g. in location of the quotation marks: Z/‘«’, X/‘»’ etc.
 
 # Installation #
 
-The easiest way to install this `epo` is to replace the standard one.
+The easiest way to install this `epo3` is to copy it onto the standard `epo`.
 In Ubuntu its standard location is `/usr/share/X11/xkb/symbols/epo`;
 if you use a different Linux distro, please check that its `epo`
 file is located there (in other Linux distributions it may reside at
 `/etc/X11/xkb/symbols/epo`).
 If the new modified `epo` is in the current directory, just say
 ~~~
-sudo cp epo /usr/share/X11/xkb/symbols/
+sudo cp epo3 /usr/share/X11/xkb/symbols/epo
 ~~~
 More civilized ways to customize keyboard layouts are described in
 [Ubuntu documentation](https://help.ubuntu.com/community/Custom%20keyboard%20layout%20definitions).

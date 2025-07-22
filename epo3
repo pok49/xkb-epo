@@ -1,0 +1,123 @@
+// -*- mode: c -*-
+// Esperanto keyboard maps -- "Ekverto"
+//
+// Ekverto A ("legacy") (2004-01-10)
+// Chusslove Illich (Ĉaslavo Iliĉo) <caslav.ilic@gmx.net>
+//
+// Ekverto B ("basic") (2006-12-02)
+// Benno Schulenberg (Beno Sĥilenberĥ) <bensberg@justemail.net>
+// Chusslove Illich (Ĉaslavo Iliĉo) <caslav.ilic@gmx.net>
+// Modified to ŜŬERTĜ at the Level3/4 by Sergio <sergio.pokrovskij@gmail.com> (2025-03-11)
+
+// ┌─────┐
+// │ 2 4 │   2 = Shift,  4 = Level3 + Shift
+// │ 1 3 │   1 = Normal, 3 = Level3
+// └─────┘
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━┓
+// │ ~ ˞ │ ! ′ │ @ ə │ # ɜ │ $   │ % ˌ │ ^ ↑ │ & ‡ │ * • │ (   │ ) ° │ _ ‑ │ + × ┃ ⌫ Back ┃
+// │ ` ‘ │ 1 ¹ │ 2 ² │ 3 ³ │ 4 § │ 5 ˈ │ 6 ↓ │ 7 † │ 8 ∞ │ 9   │ 0 ⁰ │ - ‒ │ = ≈ ┃  space ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━┫
+// ┃       ┃ Q   │ W   │ E ɛ │ R   │ T   │ Y   │ U Ŭ │ I   │ O   │ P   │ {   │ }   ┃Enter ┃
+// ┃Tab ↹  ┃ q   │ w   │ e   │ r   │ t   │ y   │ u ŭ │ i   │ o   │ p   │ [ ⟨ │ ] ⟩ ┃   ⏎  ┃
+// ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓     ┃
+// ┃        ┃ A ɑ │ S Ŝ │ D   │ F   │ G Ĝ │ H Ĥ │ J Ĵ │ K   │ L   │ : “ │ " ” │ | | ┃     ┃
+// ┃Caps ⇬  ┃ a ª │ s ŝ │ d   │ f   │ g ĝ │ h ĥ │ j ĵ │ k   │ l   │ ; „ │ ' ’ │ \ ¦ ┃     ┃
+// ┣━━━━━━━━┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━┫
+// ┃             │ Z ʒ │ X   │ C Ĉ │ V ʌ │ B ″ │ N ⁿ │ M μ │ <   │ > · │ ? ʔ ┃            ┃
+// ┃Shift ⇧      │ z « │ x » │ c ĉ │ v ‹ │ b › │ n – │ m — │ , ‚ │ . … │ / ʼ ┃Shift ⇧     ┃
+// ┣━━━━━━━┳━━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴───┲━┷━━━━━╈━━━━━┻━┳━━━━━━━┳━━┛
+// ┃       ┃ ◆   ⌘ ┃       ┃ ␣ sp                      nnbsp ⍽ ┃       ┃       ┃       ┃
+// ┃Ctrl ⎈ ┃Logo ⊞ ┃Alt  ⎇ ┃ ␣ sp      S p a c e        nbsp ⍽ ┃AltGr ⇮┃Menu   ┃Ctrl ⎈ ┃
+// ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
+
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+
+  include "us(basic)"
+  include "epo(qwerty)"
+  name[Group1]= "Esperanto";
+  key.type[Group1] = "FOUR_LEVEL_ALPHABETIC";
+
+  key <AC01> {[ NoSymbol, NoSymbol, ordfeminine, U0251 ]}; // A ª ɑ
+  key <AD03> {[ NoSymbol, NoSymbol, NoSymbol, U025B ]};    // E ɛ
+  key <AB01> {[ NoSymbol, NoSymbol, guillemotleft,  U0292 ]};	// Z « ʒ
+  key <AB02> {[ NoSymbol, NoSymbol, guillemotright, NoSymbol]}; // X »
+  key <AB04> {[ NoSymbol, NoSymbol, U2039,  U028C ]}; // V ‹ ʌ
+  key <AB05> {[ NoSymbol, NoSymbol, U203A,  U2033 ]}; // B › bis″
+  key <AB06> {[ NoSymbol, NoSymbol, endash, U207F ]}; // N – ⁿ
+  key <AB07> {[ NoSymbol, NoSymbol, emdash, mu ]};    // M — µ
+
+  key.type[Group1] = "FOUR_LEVEL";
+  key <BKSL> {[ NoSymbol, NoSymbol, brokenbar, bar ]};		  // \ | ¦ |
+  key <SPCE> {[ NoSymbol, NoSymbol, nobreakspace, U202F ]};	  // ␣ NarrowNBSP
+  key <TLDE> {[NoSymbol, NoSymbol, leftsinglequotemark, U02DE ]}; // ` ~ ‘ ˞
+
+  key <AB08> {[NoSymbol, NoSymbol, U201A,    NoSymbol ]};	// (comma less) “single low-9”‹‚›
+  key <AB09> {[NoSymbol, NoSymbol, ellipsis, periodcentered ]}; // . > … ·
+  key <AB10> {[NoSymbol, NoSymbol, U02BC, U0294 ]};		// ‘/’ ? letterʼ ʔ
+  key <AC10> {[NoSymbol, NoSymbol, doublelowquotemark, leftdoublequotemark ]};     //  semicolon,
+  key <AC11> {[NoSymbol, NoSymbol, rightsinglequotemark, rightdoublequotemark]};   //  apostrophe " rq ”
+
+  key <AD11> {[ NoSymbol, NoSymbol, U27E8, NoSymbol ]}; // [ { ⟨angle bracket
+  key <AD12> {[ NoSymbol, NoSymbol, U27E9, NoSymbol ]}; // ] } angle bracket⟩
+
+  key <AE01> {[ NoSymbol, NoSymbol, U00B9, U2032 ]}; // 1 ¹ prime
+  key <AE02> {[ NoSymbol, NoSymbol, U00B2, U0259 ]}; // 2 ² ə
+  key <AE03> {[ NoSymbol, NoSymbol, U00B3, U025C ]}; // 3 ³ ɜ
+  key <AE04> {[ NoSymbol, NoSymbol, U00A7, NoSymbol ]}; // 4 §
+  key <AE05> {[ NoSymbol, NoSymbol, U02C8, U02CC ]}; // 5 % ˈ ˌ
+  key <AE06> {[ NoSymbol, NoSymbol, downarrow,  uparrow ]};	// 6 ^ ↓ ↑
+
+  key <AE07> {[ NoSymbol, NoSymbol, dagger, doubledagger ]};	// 7 & † ‡
+  key <AE08> {[ NoSymbol, NoSymbol, infinity, U2022 ]};		// 8 * } •
+//  key <AE09> {[	NoSymbol, NoSymbol, NoSymbol, backslash ]};	// 9 ( [ backslash
+  key <AE10> {[	NoSymbol, NoSymbol, U2070, degree ]};		// 0 ) ⁰ °
+
+  key <AE11> {[ NoSymbol, NoSymbol, U2012, U2011 ]}; 	// - _ Fig- nonBreak-   (minus)
+  key <AE12> {[ NoSymbol, NoSymbol, U2248, multiply ]}; // = + ≈ ×
+
+// Configures the "," for the numeric keypad
+//    include "kpdl(comma)"
+
+// Configures the use of the AltGr key
+    include "level3(ralt_switch)"
+};
+
+// Add the Esperanto supersigned letters to their related keys on a
+// Qwerty (or Quertz) keyboard. This is a generic "component" that can
+// be applied to any Qwerty layout. If you have any questions, ask
+// J. Pablo Fernández <pupeno@pupeno.com>.
+partial
+xkb_symbols "qwerty" {
+  key.type[Group1] = "FOUR_LEVEL_ALPHABETIC";
+   key <AB03> {[ NoSymbol, NoSymbol, ccircumflex, Ccircumflex ]};
+   key <AC05> {[ NoSymbol, NoSymbol, gcircumflex, Gcircumflex ]};
+   key <AC06> {[ NoSymbol, NoSymbol, hcircumflex, Hcircumflex ]};
+   key <AC07> {[ NoSymbol, NoSymbol, jcircumflex, Jcircumflex ]};
+   key <AC02> {[ NoSymbol, NoSymbol, scircumflex, Scircumflex ]};
+   key <AD07> {[ NoSymbol, NoSymbol,      ubreve,      Ubreve ]};
+};
+
+// Add the Esperanto supersigned letters to their related keys in a
+// Dvorak layout.  Similar comment as above applies.
+partial
+xkb_symbols "dvorak" {
+    key <AD08> {[ NoSymbol, NoSymbol, ccircumflex, Ccircumflex ]};
+    key <AD07> {[ NoSymbol, NoSymbol, gcircumflex, Gcircumflex ]};
+    key <AC07> {[ NoSymbol, NoSymbol, hcircumflex, Hcircumflex ]};
+    key <AB03> {[ NoSymbol, NoSymbol, jcircumflex, Jcircumflex ]};
+    key <AC10> {[ NoSymbol, NoSymbol, scircumflex, Scircumflex ]};
+    key <AC04> {[ NoSymbol, NoSymbol,      ubreve,      Ubreve ]};
+};
+
+// Add the Esperanto supersigned letters to their related keys in a
+// Colemak layout.  Similar comment as above applies.
+partial
+xkb_symbols "colemak" {
+    key <AB03> {[ NoSymbol, NoSymbol, ccircumflex, Ccircumflex ]};
+    key <AD05> {[ NoSymbol, NoSymbol, gcircumflex, Gcircumflex ]};
+    key <AC06> {[ NoSymbol, NoSymbol, hcircumflex, Hcircumflex ]};
+    key <AD06> {[ NoSymbol, NoSymbol, jcircumflex, Jcircumflex ]};
+    key <AC03> {[ NoSymbol, NoSymbol, scircumflex, Scircumflex ]};
+    key <AD08> {[ NoSymbol, NoSymbol,      ubreve,      Ubreve ]};
+};
